@@ -1,1 +1,1 @@
-Oauth2 Authorization Flows
+Oauth2 Authorization Code Flow 

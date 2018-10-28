@@ -1,8 +1,8 @@
-package demo.resource.client.web.controller;
+package demo.authoriztion.server.web.controller;
 
-import demo.resource.client.persistence.UserRepository;
-import demo.resource.client.service.UserService;
-import demo.resource.client.web.model.User;
+import demo.authoriztion.server.persistence.UserRepository;
+import demo.authoriztion.server.service.UserService;
+import demo.authoriztion.server.web.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/api/users")
+@RequestMapping("/api/users")
 public class UserRestController {
 
     @Autowired
@@ -41,5 +41,4 @@ public class UserRestController {
     public void delete(@PathVariable("id") Long id) throws Exception {
         userRepository.deleteById(id);
     }
-
 }

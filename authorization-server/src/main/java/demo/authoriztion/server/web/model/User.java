@@ -1,5 +1,4 @@
-package demo.resource.client.web.model;
-
+package demo.authoriztion.server.web.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -58,11 +57,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", created=" + created +
-                '}';
+        return super.toString();
     }
 }
